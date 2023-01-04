@@ -26,7 +26,7 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       pdf: {
-        type: Sequelize.STRING,
+        type: Sequelize.BLOB("long"),
         allowNull: false,
       },
     },

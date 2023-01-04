@@ -21,8 +21,6 @@ const createBook = async (req, res, next) => {
     next(error);
   }
 };
-µ;
-
 const getBooks = async (_, res, next) => {
   try {
     const allBooks = await Book.findAll();
@@ -30,4 +28,9 @@ const getBooks = async (_, res, next) => {
   } catch (error) {
     next(error);
   }
+};
+
+module.exports = {
+  createBook,
+  getBooks,
 };

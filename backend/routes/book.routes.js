@@ -6,4 +6,4 @@ const bookRoute = express.Router();
 bookRoute.post("/upload", createBook);
 bookRoute.get("/allbooks", getBooks);
 
-export default bookRoute;
+module.exports = bookRoute;

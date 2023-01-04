@@ -1,11 +1,10 @@
-const sequelize = new Sequelize(process.env.DATABASE_URL, {
-  dialect: "postgres",
-});
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log("Database connected to findjob");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+const { Pool } = require("pg");
+
+function connectionMiddleware(connectionData) {
+  const pool = new Pool(connectionData);
+  return (req, res, next) => {
+    req.pool = pool;
+    next();
+  };
+}
+module.exports = connectionMiddleware;

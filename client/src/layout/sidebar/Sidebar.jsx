@@ -34,50 +34,52 @@ export default function Sidebar() {
               <MdOutlineCategory />
               <span class="ml-3">Category</span>
             </a>
-            <ul className="ml-6">
+            <ul className="ml-6 flex flex-col gap-3">
               <li>
-                <a href="" className="flex  items-center hover:origin-right">
+                <a href="" className="flex  items-center hover:ml-3">
                   <BiRightArrow />
-                  Littéraire
+                  <span className="ml-3">Littéraire</span>
                 </a>
               </li>
               <li>
-                <a href="" className="flex  items-center">
+                <a href="" className="flex  items-center hover:ml-3">
                   <BiRightArrow />
-                  Narratif
+                  <span className="ml-3"> Narratif</span>
                 </a>
               </li>
 
               <li>
-                <a href="" className="flex  items-center">
-                  <BiRightArrow /> Argumentatif
+                <a href="" className="flex  items-center hover:ml-3">
+                  <BiRightArrow />
+                  <span className="ml-3"> Argumentatif</span>
                 </a>
               </li>
 
               <li>
-                <a href="" className="flex  items-center">
+                <a href="" className="flex  items-center hover:ml-3">
+                  <BiRightArrow />
+                  <span className="ml-3">Poétique</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="" className="flex  items-center hover:ml-3">
+                  <BiRightArrow /> <span className="ml-3">Théâtral</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="" className="flex  items-center hover:ml-3">
                   {" "}
-                  <BiRightArrow /> Poétique
-                </a>
-              </li>
-
-              <li>
-                <a href="" className="flex  items-center">
-                  <BiRightArrow /> Théâtral
-                </a>
-              </li>
-
-              <li>
-                <a href="" className="flex  items-center">
-                  {" "}
                   <BiRightArrow />
-                  Epistolaire
+                  <span className="ml-3"> Epistolaire</span>
                 </a>
               </li>
 
               <li>
-                <a href="" className="flex  items-center">
-                  <BiRightArrow /> Documentaire
+                <a href="" className="flex  items-center hover:ml-3">
+                  <BiRightArrow />
+                  <span className="ml-3">Documentaire</span>
                 </a>
               </li>
             </ul>

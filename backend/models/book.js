@@ -1,10 +1,12 @@
 const Sequelize = require("sequelize");
 const express = require("express");
 
-const sequelize = new Sequelize("postgres", "postgres", "postgres", {
-  host: "localhost",
-  dialect: "postgres",
+const sequelize = new Sequelize(process.env.DATABASE_URL);
+
+sequelize.sync({ force: true }).then(() => {
+  console.log("db has been sync");
 });
+
 const Book = sequelize.define("book", {
   title: {
     type: Sequelize.STRING,
@@ -28,7 +30,7 @@ const Book = sequelize.define("book", {
     allowNull: true,
   },
   pdf: {
-    type: Sequelize.BLOB("long"),
+    type: Sequelize.STRING,
     allowNull: true,
   },
 });

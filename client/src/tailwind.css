@@ -8,3 +8,8 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+#main::-webkit-scrollbar {
+  color: black;
+  width: 0.2rem;
+}

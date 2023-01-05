@@ -14,9 +14,8 @@ const createBook = async (req, res, next) => {
     const book = await Book.create(data);
 
     if (book) {
-      res.status(200).json({ message: "Telecharger avec succes" });
+      res.status(200).json("Telecharger avec succes");
     }
-    res.json({ message: "Erreur de telechacgement" });
   } catch (error) {
     next(error);
   }

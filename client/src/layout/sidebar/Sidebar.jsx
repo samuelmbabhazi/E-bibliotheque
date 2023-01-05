@@ -10,9 +10,7 @@ export default function Sidebar() {
             class="h-6 mr-3 sm:h-7"
             alt="Flowbite Logo"
           />
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
-          </span>
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
         </a>
         <ul class="space-y-2">
           <li>

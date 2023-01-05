@@ -3,7 +3,7 @@ const express = require("express");
 
 const sequelize = new Sequelize(process.env.DATABASE_URL);
 
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ alter: true }).then(() => {
   console.log("db has been sync");
 });
 

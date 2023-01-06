@@ -3,10 +3,6 @@ const express = require("express");
 
 const sequelize = new Sequelize(process.env.DATABASE_URL);
 
-sequelize.sync({ alter: true }).then(() => {
-  console.log("db has been sync");
-});
-
 const Book = sequelize.define("book", {
   title: {
     type: Sequelize.STRING,
@@ -26,7 +22,7 @@ const Book = sequelize.define("book", {
   },
 
   publicationDate: {
-    type: Sequelize.DATEONLY,
+    type: Sequelize.STRING,
     allowNull: true,
   },
   pdf: {

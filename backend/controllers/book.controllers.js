@@ -1,8 +1,9 @@
-const Book = require("../models/book");
+const { Book } = require("../models/book");
 
-const createBook = async (req, res, next) => {
+const createBook = (req, res, next) => {
   try {
-    const { title, author, publisher, resume, publicationDate, pdf } = req.body;
+    const { title, author, publisher, resume, publicationDate } = req.body;
+    const { pdf } = req.file.buffer;
     const data = {
       title,
       author,
@@ -11,7 +12,7 @@ const createBook = async (req, res, next) => {
       publicationDate,
       pdf,
     };
-    const book = await Book.create(data);
+    const book = Book.create(data);
 
     if (book) {
       res.status(200).json("Telecharger avec succes");
@@ -20,9 +21,9 @@ const createBook = async (req, res, next) => {
     next(error);
   }
 };
-const getBooks = async (_, res, next) => {
+const getBooks = (_, res, next) => {
   try {
-    const allBooks = await Book.findAll();
+    const allBooks = Book.findAll();
     res.status(200).json({ allBooks });
   } catch (error) {
     next(error);

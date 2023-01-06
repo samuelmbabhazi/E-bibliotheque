@@ -30,8 +30,8 @@ const Book = sequelize.define("book", {
     allowNull: true,
   },
   pdf: {
-    type: Sequelize.STRING,
+    type: Sequelize.BLOB("long"),
     allowNull: true,
   },
 });
-module.exports = Book;
+module.exports = { Book, sequelize };

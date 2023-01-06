@@ -6,7 +6,7 @@ import { BiRightArrow } from "react-icons/bi";
 export default function Sidebar() {
   return (
     <aside
-      class="w-64   pl-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-60"
+      class="w-64   pl-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-70"
       aria-label="Sidebar"
     >
       <div className="" id="logo">
@@ -19,7 +19,7 @@ export default function Sidebar() {
           <li>
             <a
               href="#"
-              class="flex text-[20px] items-center p-2 text-base font-medium text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="flex text-[20px] items-center p-2 text-base font-medium text-black  hover:bg-gray-100 dark:hover:bg-gray-700"
             >
               <RiDashboardLine />
               <span class="ml-3">Dashboard</span>
@@ -29,7 +29,7 @@ export default function Sidebar() {
           <li>
             <a
               href="#"
-              class="flex text-[20px] items-center p-2 text-base font-medium text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="flex text-[20px] items-center p-2 text-base font-medium text-black  hover:bg-gray-100 dark:hover:bg-gray-700"
             >
               <MdOutlineCategory />
               <span class="ml-3">Category</span>
@@ -88,7 +88,7 @@ export default function Sidebar() {
           <li>
             <a
               href="#"
-              class="flex text-[20px] items-center p-2 text-base font-medium text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="flex text-[20px] items-center p-2 text-base font-medium text-black  hover:bg-gray-100 dark:hover:bg-gray-700"
             >
               <RiSettings4Fill />
               <span class="ml-3">Settings</span>

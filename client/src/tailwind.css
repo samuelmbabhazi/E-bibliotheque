@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Gentium+Book+Basic:wght@400;700&family=Gilda+Display&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&family=Raleway&family=Roboto:wght@100;300;500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,9 +9,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  font-family: "Gentium Book Basic", serif;
 }
 
 #main::-webkit-scrollbar {
   color: black;
   width: 0.2rem;
+}
+
+#card:hover #tooltip-default {
+  visibility: visible;
 }

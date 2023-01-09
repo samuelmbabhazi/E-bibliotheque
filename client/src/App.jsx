@@ -7,7 +7,7 @@ import Sidebar from "./layout/sidebar/Sidebar";
 
 function App() {
   return (
-    <div className="flex gap-12">
+    <div className="flex max-[620px]:w-[100vw] gap-12">
       <Sidebar />
       <div className="flex flex-col w-[70%] my-auto">
         <Search />

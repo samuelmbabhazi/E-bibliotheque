@@ -4,7 +4,7 @@ export default function Main() {
   return (
     <main
       id="main"
-      className="w-[100%] flex  h-[87.5vh]  overflow-y-auto  flex-wrap gap-6 py-6 justify-center items-center bg-white backdrop rounded-lg -filter backdrop-blur-lg bg-opacity-70"
+      className="w-[100%] flex  h-[87.5vh]  overflow-y-auto  flex-wrap gap-6 py-6 justify-center items-center bg-white backdrop  rounded-lg -filter backdrop-blur-lg bg-opacity-70"
     >
       <div className="book w-[200px]   ">
         <div id="card">

@@ -6,7 +6,7 @@ import { BiRightArrow } from "react-icons/bi";
 export default function Sidebar() {
   return (
     <aside
-      class="w-64   pl-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-70"
+      class="w-64  pl-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-70"
       aria-label="Sidebar"
     >
       <div className="" id="logo">

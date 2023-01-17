@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import "./App.css";
+import Field from "./components/field/Field";
 import Main from "./layout/main/Main";
 import Search from "./layout/serchbar/Search";
 import Sidebar from "./layout/sidebar/Sidebar";
@@ -8,7 +9,7 @@ import Sidebar from "./layout/sidebar/Sidebar";
 function App() {
   return (
     <div className="flex max-[620px]:w-[100vw] gap-12">
-      <Sidebar />
+      {/* <Sidebar />
       <div className="flex flex-col w-[70%] my-auto">
         <Search />
         <Main />
@@ -19,7 +20,8 @@ function App() {
         id="button-addon2"
       >
         publier
-      </button>
+      </button> */}
+      <Field />
     </div>
   );
 }
